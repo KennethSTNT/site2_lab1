@@ -23,6 +23,8 @@ $router->get('/users',['uses' => 'UserController@getUsers']);
 
 });
 
+$router->get('/userss', 'UserController@index');
+
 $router->post('/cusers', 'UserController@addstud'); //insert new record
 
 $router->delete('/dusers/{id}', 'UserController@deletestudid'); // delete student record by studid
